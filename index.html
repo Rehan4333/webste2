@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Mobile Menu</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+    <header>
+        <div class="container">
+          
+          <div>
+            <img class="logo" src="main logo.png" alt="">
+            <div class="nav-toggle" id="navToggle">
+              
+              <img id="navClosed" class="navIcon" src ="hamburger icon.svg" alt="hamburger menu">
+              <img id="navOpen" class="navIcon hidden" src="close icon.svg" alt="close hamburger">
+            </div>
+          </div>
+          
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="vision.html">Our Vision</a></li>
+              <li><a href="band.html">G-Band</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          
+        </div>
+      </header>
+    </section>
+      <div class="mid_section">
+          <h1 class="mid_txt">Launching In</h1>
+          <div class="launch-time">
+            <div>
+                <p id="days">00</p>
+                <span>Days</span>
+            </div>
+            <div>
+                <p id="hours">00</p>
+                <span>Hours</span>
+            </div>
+            <div>
+                <p id="minutes">00</p>
+                <span>Mins</span>
+            </div>
+            <div>
+                <p id="seconds">00</p>
+                <span>Secs</span>
+            </div>
+        </div>
+    </div>
+      </div>
+      <section class="band">
+        <img id="band_img" src="blue-band.png" alt="">
+        <div class="colour_selector">
+          <span class="blue" onclick="imgSlider('/blue-band.png')">-.-</span>
+          <span class="red" onclick="imgSlider('/red-band.png')">-.-</span>
+          <span class="purple" onclick="imgSlider('purple-band.png')">-.-</span>
+          <span class="grey" onclick="imgSlider('grey-band.png')">-.-</span>
+          <span class="orange" onclick="imgSlider('orange-band.png')">-.-</span>
+         
+      </div>
+      </section>
+    <script type="text/javascript">
+      function imgSlider(anything){
+    console.log(anything);
+    document.querySelector('#band_img').src = anything;
+}
+
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>

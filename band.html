@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>G-Band</title>
+</head>
+<body>
+    <section>
+        <header>
+            <div class="container">
+              
+              <div>
+                <img class="logo" src="main logo.png">
+                <div class="nav-toggle" id="navToggle">
+                  
+                  <img id="navClosed" class="navIcon" src ="hamburger icon.svg" alt="hamburger menu">
+                  <img id="navOpen" class="navIcon hidden" src="close icon.svg" alt="close hamburger">
+                </div>
+              </div>
+              
+              <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vision.html">Our Vision</a></li>
+                    <li><a href="band.html">G-Band</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              
+            </div>
+          </header>
+        </section>
+        <section class="main1_div">
+            <p id="para_band">The Infinity G-Band is GPS enabled band that tracks the location of the person wearing it. The band comes with Gen III GPS technology, is Wi-Fi enabled and, has integrated SpO2, sleep tracker and pulse counter. The band supports USB type-C charging and after a full charge can last for as long as at least a week. The stretchability and weightlessness of the band makes it comfortable and light as a feather.</p>
+            <img id="changing_img" src="blue-band.png" alt="">
+        <div class="colour_selector">
+          <span class="blue" onclick="imgSlider('/blue-band.png')">-.-</span>
+          <span class="red" onclick="imgSlider('/red-band.png')">-.-</span>
+          <span class="purple" onclick="imgSlider('purple-band.png')">-.-</span>
+          <span class="grey" onclick="imgSlider('grey-band.png')">-.-</span>
+          <span class="orange" onclick="imgSlider('orange-band.png')">-.-</span>
+      </div>
+            <h3 id="specs">Specifications</h3>
+            <ul class="lists">Latest GPS III technology </ul>
+            <ul class="lists">Long lasting battery life </ul>
+            <ul class="lists">Wi-Fi enabled</ul>
+            <ul class="lists">SpO2, sleep tracking and pulse counter</ul>
+            <ul class="lists">Cloud upload</ul>
+            <button class="g-band" type="button">Pre-Order Infinity G-Band</button>
+        </section>
+        <script type="text/javascript">
+          function imgSlider(anything){
+        console.log(anything);
+        document.querySelector('#changing_img').src = anything;
+    }
+        </script>
+        <script src="main.js"></script>
+</body>
+</html>
